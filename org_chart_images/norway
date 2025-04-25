@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agria Vet Guide 🇳🇴 - Norge</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #F8F3E8;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #00427a;
+      margin-bottom: 2rem;
+    }
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+    .level {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      width: 180px;
+      height: 260px;
+      perspective: 1000px;
+      position: relative;
+      z-index: 1;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+      z-index: 2;
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .card-front {
+      border: 3px solid #005aa0;
+    }
+    .card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-front div {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 5px 0;
+      font-size: 0.85rem;
+    }
+    .card-back {
+      background: white;
+      border: 3px solid #00427a;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      font-size: 0.70rem;
+      color: #00427a;
+      text-align: left;
+    }
+    .scrollable {
+      overflow-y: auto;
+      max-height: 230px;
+      padding-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agria Vet Guide 🇳🇴</h1>
+  <div class="org-chart">
+    <div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Ingunn Solberg.jpg" alt="Ingunn Solberg">
+            <div>Ingunn Solberg<br><span style="font-weight:normal;">Head Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Ingunn er sjefsveterinær på Agria Vet Guide. Hun fikk sin veterinære autorisasjon ved Norges Veterinærhøgskole/ NMBU i Oslo i 2015 og har tidligere jobbet både på en mindre dyreklinikk og et dyresykehus i Sverige. I dag jobber hun på Jar Dyreklinikk i Bærum, i tillegg til å være veterinærmedisinsk ansvarlig for Agria Vet Guide i Norge. Ingunn er selv oppdretter av rasen saluki og har en genuin interesse for reproduksjon. Hun har derfor hospitert i ett år hos Ragnar Thomassen på spesialistklinikken for reproduksjon i Norge: ReproHund.</div></div>
+        </div>
+      </div></div>
+    <div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Anne Nordhagen.jpg" alt="Anne Nordhagen">
+            <div>Anne Nordhagen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Anne Nordhagen ble ferdig utdannet Veterinær fra København i Danmark 2012. Hun er opprinnelig fra Bærum, men flyttet til Tønsberg i Vestfold 2020. Hun har siden hun ble ferdig utdannet veterinær, arbeidet ved ulike smådyrsklinikker og dyresykehus. Hun har utviklet kompetanse innenfor de fleste fagområder hos hunder og katter, men hennes hovedfagfelt er tannbehandling hos hund og katt, kirurgi og ultralyd. Hun arbeider for tiden ved en smådyrsklinikk i Tønsberg Vet XL. På fritiden liker hun å være kreativ og bruker derfor mye tid på å tegne/male. Hun bor sammen med sin samboer og sine to katter av rasene maine coon og norsk skogskatt.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Anne Ingebjørg Backer Giæver.jpg" alt="Anne Ingebjørg Backer Giæver">
+            <div>Anne Ingebjørg Backer Giæver<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Anne ble uteksaminert fra Norges Veterinærhøgskole, NMBU, i 2018. Hun jobbet de første par årene med kombinert smådyrpraksis på klinikk og produksjonsdyrvakt. Det siste året har hun jobbet på smådyrklinikk med hund og katt, der hun også har det hatt et ekstra fokus på kanin.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Anne-Lone Steinbakken.jpg" alt="Anne-Lone Steinbakken">
+            <div>Anne-Lone Steinbakken<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Ble uteksaminert i 2018 fra Veterinæruniversitetet i Slovakia. Har bodd og jobbet i England siden jeg var ferdigutdannet, jobbet på både dyresykehus for smådyr og mindre smådyrsklinikker hovedsaklig med hund og katt.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Auður Hreinsdottir.png" alt="Auður Hreinsdottir">
+            <div>Auður Hreinsdottir<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Audur Hreinsdottir er en islandsk veterinær som ble utdannet i Norge i 2017. Hun har jobbet på smådyrklinikker i Norge og Island, samt på smådyrsykehus i Sverige. Hun har spesiell interesse for ultralyd, kirurgi og akuttmedisin.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Cathrine Winblad.jpg" alt="Cathrine Winblad">
+            <div>Cathrine Winblad<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Cathrine ble uteksaminert fra Norges miljø- og biovitenskapelige universitet i Ås i 2003 og Universitetet i veterinærmedisin i Košice i 2007. Hennes tidligere arbeid har vært som veterinær med smådyr på forskjellige klinikker i Norge. Hun bruker også tiden sin på online helsefokusert trening for dyreeiere. Cathrine har omfattende etterutdanning og jobbet tidligere som allmennpraktiker hvor hun gjorde mye kirurgi. Som smådyrveterinær hjelper hun dyreeiere med å gi råd og finne løsninger.</div></div>
+        </div>
+      </div></div>
+<div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Christine Berge.png" alt="Christine Berge">
+            <div>Christine Berge<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Christine er utdannet veterinær og atferdskonsulent fra NMBU. Hun har bakgrunn som veterinær på dyreklinikk og arbeid med dyrevelferd. Som atferdskonsulent har hun spesielt fokus på katt, og jobber som atferdsrådgiver og skriver artikler om katter. Selv har hun en katt og en flokk med høner.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Diana Chong.jpg" alt="Diana Chong">
+            <div>Diana Chong<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Diana Chong ble utdannet veterinær fra Norges Veterinærhøgskole i 2015. Hun reiste deretter til Sverige for å gjøre et roterende internship første året hos Mälaren Hästklinik, der hun fikk bred klinisk erfaring i alt innenfor hestepraksis. Etter det, jobbet hun på Husaby Hästklinik de 5 siste årene,der hun først og fremst har fokusert på halthetsutredning, ridbarhetsproblem,nedsatt prestasjon og akutt syke pasienter. Hun har gått flere etterutdanningskurs på hest gjennom VetPD og ISELP. Diana har nå flyttet tilbake til Norge,kjøpt seg en liten gård og startet sin egen hestepraksis. Hun er selv sprangrytter, og resterende tid går til hennes egen hund og hester.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://via.placeholder.com/200x260?text=Emilie+Jacobsen" alt="Emilie Jacobsen">
+            <div>Emilie Jacobsen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Emelie har jobbet som smådyrsveterinær siden hun var ferdig ved NMBU i 2018. Hun har jobbet med mye indremedisin, dermatologi og odontologi, samt noe kirurgi. Emelie jobber i dag på Jar dyreklinikk som veterinær og daglig leder ved siden av Agria Vet Guide. Ved siden av jobb liker hun å holde seg i god fysisk form, da hovedsakelig ved ski, løping og sykling med sin border collie/golden retiever-blanding Walter.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Gro Marit Sørlie.jpg" alt="Gro Marit Sørlie">
+            <div>Gro Marit Sørlie<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Gro Marit Sørlie, dyrepleier og atferdskonsulent, med 10 års erfaring fra dyreklinikker og dyresykehus. Jobber i dag som ernæringsrådgiver for hund og katt.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Gunhild Kjellerød Magelssen.jpg" alt="Gunhild Kjellerød Magelssen">
+            <div>Gunhild Kjellerød Magelssen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Smådyrsveterinær med 10år + erfaring fra et av landets største dyresykehus. Hovedinteresse innen veterinærfaget er tenner og tannsykdommer.</div></div>
+        </div>
+      </div></div>
+<div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Heidrun Roksvåg Sandve.jpg" alt="Heidrun Roksvåg Sandve">
+            <div>Heidrun Roksvåg Sandve<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Heidrun ble uteksaminert fra Tierärztliche Hochschule Hannover i 2004. Har tidligere jobbet i produksjonsdyrpraksis, i Mattilsynet og ved forskjellige smådyrsklinikker. De siste 12 årene har hun jobbet ved Alta Dyreklinikk, hvor hun også er medeier. Her deltar hun i kommunal veterinærvakt, og jobber ellers med utredninger, kirurgi, tannbehandlinger og kiropraktikk på alle dyr, men hovedsaklig hund og katt.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Håkon Dolva Sagedal.jpg" alt="Håkon Dolva Sagedal">
+            <div>Håkon Dolva Sagedal<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Håkon ble uteksaminert ved NMBU Veterinærhøgskolen i Oslo i 2019. Han har siden jobbet på en smådyrklinikk med hunder og katter. Han jobber mest poliklinisk, men også indremedisinsk og kirurgisk. Håkon har gått kurs innen tannhelse.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Ingunn Hreinsdottir.png" alt="Ingunn Hreinsdottir">
+            <div>Ingunn Hreinsdottir<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Ingunn ble ferdig utdannet veterinær i Norge i 2017. Hun har jobbet på et dyresykehus i Sverige i 7 år, og har nå flyttet tilbake til Norge hvor hun jobber på en smådyrklinikk i Oslo-området. Hun trives best med akuttmedisin, operasjoner, ultralyd og utredninger, men synes også at variasjon og travle dager passer henne best.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Kjerstin Klepsvik Vinsjansen.jpg" alt="Kjerstin Klepsvik Vinsjansen">
+            <div>Kjerstin Klepsvik Vinsjansen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Kjerstin Vinsjansen Gjertsen er autorisert dyrepleier og utdannet atferdsterapeut ved Norges miljø- og biovitenskapelige universitet. Ved å kombinere de to utdannelsene har vi en unik mulighet til å se fysisk og mental helse i sammenheng. Hun har mange års erfaring fra dyreklinikker og har holdt atferdskonsultasjoner for katt og hund siden 2010. I 2016 gikk Kjerstin over til ren atferdspraksis i egen virksomhet. Hun har også holdt mange foredrag for katteeiere, katteorganisasjoner og fosterhjem, samt vært frivillig rådgiver for fosterhjem i den lokale Dyrebeskyttelsen. Interessen for atferd startet allerede som barn og har utviklet seg videre gjennom å arbeide med flere forskjellige dyrearter. Kjerstin har levd sammen med katter hele livet og har et sterkt ønske om at alle skal kunne kjenne på gleden over disse vakre dyrene. Da må det innimellom løses noen utfordringer, det er derfor vi er her!</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Maiken Johnsrud.jpeg" alt="Maiken Johnsrud">
+            <div>Maiken Johnsrud<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Maiken Johnsrud er ambulerende hesteveterinær i Stor-Oslo-regionen, hvor hun tilbyr tjenester som halthetsutredning, munnhuleundersøkelser, konsultasjoner og akutt ambulatorisk behandling. Hun har også vaktordning for NMBU og Ringerike kommune. Med flere års erfaring som klinikkveterinær ved Empet Romerike Hesteklinikk, har Maiken omfattende kompetanse innen halthetsutredning, bildediagnostikk og akutt hestemedisin.</div></div>
+        </div>
+      </div></div>
+<div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://via.placeholder.com/200x260?text=Maria+Landaas+Danielsen" alt="Maria Landaas Danielsen">
+            <div>Maria Landaas Danielsen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Maria ble uteksaminert fra University of Veterinary Medicine and Pharmacy in Kosice, Slovakia i 2017. Siden da har hun jobbet med hovedsaklig hest og smådyr i Sverige og Norge. I dag jobber hun på en smådyrklinikk i Bærum samt har sin egen ambulatoriske hestepraksis. Maria har gått etterutdanningskurs innen tenner og akuttmedisin.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Marte Fjeldsgaard.jpeg" alt="Marte Fjeldsgaard">
+            <div>Marte Fjeldsgaard<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Marte er utdannet ved Norges Veterinærhøgskole/NMBU Veterinærhøgskolen og var ferdig veterinær i 2013. Hun har siden den gang jobbet med klinisk smådyrmedisin, hovedsaklig hund og katt. Hun driver i dag sin egen smådyrsklinikk i Oslo sammen med en kollega. Marte er en allmennpraktiker som setter stor pris på det allsidige ved yrket, med en ekstra interesse for indremedisin. Hun har også holdt kurs i førstehjelp på hund.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Nina Hansen.jpg" alt="Nina Hansen">
+            <div>Nina Hansen<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Nina ble uteksaminert fra NMBU veterinærhøyskolen i Oslo i 2013. Har etter dette jobbet i klinisk smådyrspraksis på både dyresykehus og andre klinikker med hovedvekt på hund og katt. Her har hun jobbet mye med akuttmedisin, indremedisin, klinisk patologi og dermatologi. Nina har de siste årene jobbet som veterinær i Norsk kennel klub (NKK)hvor hun blant annet underviser på NKKs oppdretterskole i tillegg til å holde foredrag til hundeklubber om avl og helse.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Nina Langerød.jpg" alt="Nina Langerød">
+            <div>Nina Langerød<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">No description</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Renate Sjølie.jpg" alt="Renate Sjølie">
+            <div>Renate Sjølie<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Renate blev utdannet ved Norges Veterinærhøgskole i 2008. Arbeidet ved store dyresykehus i både inn- og utland. Mye erfaring med akuttkirurgi og traumer. Tilleggsutdannelse innen hud- og allergiproblemer. Har i tillegg til vanlig klinikkdrift også arbeidet som show-veterinær for «hundehviskeren» César Millán og som løpsveterinær for Norges Hundekjørerforbund. Gjennom arbeidet som veterinær i Norsk Kennel Klub gir Renate veiledning til hundeklubber innenfor avl og oppdrett av rasehund. Privat har Renate lang erfaring med rasen Grand Danois.</div></div>
+        </div>
+      </div></div>
+<div class="level">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://via.placeholder.com/200x260?text=Sarah+Westgaard" alt="Sarah Westgaard">
+            <div>Sarah Westgaard<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">Sarah har jobbet som veterinær på smådyrklinikk i snart 8 år. I dag jobber hun på en klinikk i Fredrikstad, hvor hennes interesseområder er indremedisin, akuttmedisin og bløtvevskirurgi.
+Tanja Kleeb
+Veterinarian</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/Tanja Kleeb.jpg" alt="Tanja Kleeb">
+            <div>Tanja Kleeb<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">No description</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="org_chart_images/org_chart/William Bredal.jpg" alt="William Bredal">
+            <div>William Bredal<br><span style="font-weight:normal;">Veterinarian</span></div>
+          </div>
+          <div class="card-back"><div class="scrollable">William ble uteksaminert i 1989 fra Norges veterinærhøgskole. Han har mer enn 30 års erfaring med smådyrpraksis fra klinikker og på Norges veterinærhøgskole. Han har skrevet over 200 artikler i veterinærtidsskrifter og populærvitenskapelige hundetidsskrifter, og vunnet pris for beste fagartikkel i Norsk Veterinærtidsskrift. I tillegg har han skrevet en bok om Førstehjelp til hund. Han er en av få eksperter i verden på hundens nesemidd. Han har dessuten arbeidet i mange år med ernæring til smådyr. Han er en ettertraktet foreleser, og har holdt foredrag om sykdommer/ernæring hos hund og katt i 32 land.</div></div>
+        </div>
+      </div></div>
+  </div>
+</body>
+</html>
